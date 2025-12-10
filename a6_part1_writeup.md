@@ -35,7 +35,7 @@ Would you trust this model to predict a score for a student who studied 10 hours
 - What happens when you make predictions outside the range of your training data?
 
 **YOUR ANSWER:**
-I would only trust the model to predict 10 hours if the training data includes values close to 10. Predicting outside the range may be inaccurate because it has never seen those kinds of examples.
+I would only trust the model to predict 10 hours if the training data includes values close to 10. Predicting outside the range may be inaccurate because it has never seen those kinds of examples. I think this is known as extrapolation, linear regression models can output very unreliable results when it comes to making predictions outside of their trained data range. 
 
 
 
@@ -63,6 +63,7 @@ What are some real-world factors that could affect test scores that this model d
 1. Test anxiety or stress
 2. Sleep and health
 3. Quality of study materials or teaching
+4. Student motivation or intensity of focus.
 
 
 ---
@@ -73,6 +74,7 @@ What are some real-world factors that could affect test scores that this model d
 Why do we split our data into training and testing sets? What would happen if we trained and tested on the same data?
 
 **YOUR ANSWER:**
+We split the data into training and testing sets to evaluate how well the model preforms on new, unseen data. If we trained the model on the same data we tested it on, the model would most likely preform perfectly on that data, however would fail to extrapolate its knowledge to unseen data. My reasearch says this is called overfitting, "where the model memorizes instead of learning the underlying pattern."
 
 
 
@@ -83,6 +85,7 @@ Why do we split our data into training and testing sets? What would happen if we
 What was the most challenging part of this assignment for you? How did you overcome it (or what help do you still need)?
 
 **YOUR ANSWER:**
+The most challenging part for me was understanding how to interpret the evaluation metrics, R^2 and MSE and what they mean in real terms. I mostly overcame this challenge by reasearching on google and reviewing examples I could find online. I also compared different model outputs to see how changes in the data affect the results. 
 
 
 
@@ -98,6 +101,9 @@ Describe one real-world problem you could solve with linear regression. What wou
 - **Why this relationship might be linear:**
 
 **YOUR ANSWER:**
+Feature (X): Square footage of a house
+Target (Y): Sale price
+This relation may be linear as generally as the size of a house increases, its price also increases, of course many other factors affect price other than just square footage, however it should stll be a roughly linear relation. 
 
 
 
